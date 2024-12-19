@@ -27,11 +27,11 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: docker.io/wangzijian115/115:dev
+          tags: docker.io/1013510225/115:dev
 
       - name: Release and push to Docker Hub on workflow dispatch
         if: ${{ github.event_name == 'workflow_dispatch' }}
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: docker.io/wangzijian115/115:latest
+          tags: docker.io/1013510225/115:latest
