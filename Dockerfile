@@ -48,7 +48,7 @@ RUN apt update \
     && wget -q --no-check-certificate -c "https://down.115.com/client/115pc/lin/115br_v${VERSION}.deb" \
     && apt install "./115br_v${VERSION}.deb"  \
     && rm "115br_v${VERSION}.deb" \
-    && wget -q --no-check-certificate -c https://github.com/dream10201/115Cookie/archive/refs/heads/master.zip \
+    && wget -q --no-check-certificate -c https://github.com/1013510225/115Cookie/archive/refs/heads/main.zip \
     && unzip -j master.zip -d /usr/local/115Cookie/ \
     && rm master.zip \
     && mkdir -p /opt/Desktop \
